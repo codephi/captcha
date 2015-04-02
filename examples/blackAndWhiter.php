@@ -1,8 +1,7 @@
 <?php
-include '../lib/captcha.php';
+include '../captcha.php';
 
 $captcha = new Captcha();
-
 
 $captcha->image([
     'background' => '00',

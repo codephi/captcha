@@ -175,7 +175,7 @@ class Captcha
         } else {
             $code = $this->codes[$this->level - 1];
             if (!$this->total)
-                $this->total = ($this->level + 1) > 2;
+                $this->total = ($this->level + 1) > 3 ? ($this->level + 1) : 3;
         }
 
         $this->captcha = substr(str_shuffle($code), 0, ($this->total));
