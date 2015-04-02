@@ -26,10 +26,11 @@ class Captcha
      * int $fontSize
      *
      * Tamanho da fonte dos caracteres.
-     * */
-    public $fontSize = 30;
+     * *leve
+     * public $fontSize = 30;
 
-    /**
+    *
+* /**
      * int $total
      *
      * Tamanho da fonte dos caracteres.
@@ -222,7 +223,7 @@ class Captcha
      */
     public function randomFont()
     {
-        if ($this->leve > 0 and $this->leve <= 3 and $this->fontFamilyCount < 2)
+        if ($this->level > 0 and $this->level <= 3 and $this->fontFamilyCount < 2)
             $rand = rand(0, 1);
         else
             $rand = rand(1, $this->fontFamilyCount) - 1;
