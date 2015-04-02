@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 /**
  * Captcha
@@ -26,11 +28,9 @@ class Captcha
      * int $fontSize
      *
      * Tamanho da fonte dos caracteres.
-     * *leve
-     * public $fontSize = 30;
-
-    *
-* /**
+     */
+    public $fontSize = 30;
+    /**
      * int $total
      *
      * Tamanho da fonte dos caracteres.
