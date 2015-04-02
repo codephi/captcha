@@ -223,7 +223,9 @@ class Captcha
      */
     public function randomFont()
     {
-        if ($this->level > 0 and $this->level <= 3 and $this->fontFamilyCount < 2)
+        if ($this->fontFamilyCount == 1)
+            $rand = 0;
+        elseif ($this->level > 0 and $this->level <= 3 and $this->fontFamilyCount < 2)
             $rand = rand(0, 1);
         else
             $rand = rand(1, $this->fontFamilyCount) - 1;
